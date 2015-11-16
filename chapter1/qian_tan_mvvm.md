@@ -1,4 +1,4 @@
-# Android中浅谈MVVM
+# 浅谈MVVM
 
 
 ### MVC
