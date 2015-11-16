@@ -2,7 +2,8 @@
     "plugins": [
         "-betterchinese",
         "catalog",
-        "include-codeblock"
+        "include-codeblock",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {}
 }
