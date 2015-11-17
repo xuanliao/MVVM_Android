@@ -36,7 +36,7 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 * 处理Model数据
 
 #####下一个问题，如何组织抽离出来的部分呢？
-也许我们可以从MVVM中找出一些答案。
+也许我们可以从[MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel)中找出一些答案。
 
 
 
