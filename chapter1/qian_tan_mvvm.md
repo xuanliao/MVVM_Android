@@ -1,4 +1,4 @@
-# 浅谈MVVM
+# 浅谈移动端的MVVM
 
 ### MVC
 [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), 及Model-View-Controller，最早诞生于八十年代，在项目架构中明确表明了各个层级的业务逻辑关系，现在已经成为主流的客户端编程框架。简单回顾一下：
@@ -44,6 +44,7 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 
 ###MVVM
 [MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel)全称Model-View-ViewModel。最早于2005年被微软的架构师John Gossman提出，并且在微软的软件开发中使用。而整整比MVC晚了20多年。
+
 
 ---
 ###MVC中的MVVM
