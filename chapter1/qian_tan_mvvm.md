@@ -36,6 +36,7 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 * 界面跳转
 * 监听Model的更新数据
 
+
 而其中相对于View，比较独立的部分可以复用：
 * 处理Model数据
 
