@@ -76,3 +76,5 @@ MVVM通常还会使用双向绑定技术，这样可以使得Model与ViewModel�
 现在Controller仅需要关注ViewModel的数据来管理各种各样的视图显示，并当视图有交互时，通知ViewModel来处理相关Model的处理业务。Controller不在需要了解数据库操作，网络请求，数据持久化，数据模型等。
 
 ViewModel以属性的方式存在于Controller中，但是它不包含Controller，对Controller一无所知，将Model层完全与Controller层完全的隔离开来。
+
+总结下现有各个层次的主要职责:
