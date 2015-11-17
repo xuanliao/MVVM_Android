@@ -58,5 +58,14 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 
 它也有一个更好的术语可能是"View Coordinator"，它从数据资源中（数据库，网络服务器等）中获取model，运用相关逻辑处理成view的展示数据。它暴露给View仅是需要显示的内容（理想状态下是不会直接将Model暴露给View）。它还负责监听View的交互事件，来对Model更改（比如更新数据库，服务器调用等。
 
+MVVM通常还会使用双向绑定技术，这样可以使得Model与ViewModel，ViewModel与View之间的变化能直接的反馈出来。所有有时MVVM也被称为[Model-View-Binder](https://en.wikipedia.org/wiki/Model_View_ViewModel)。
+
+####MVVM的缺点
+* 数据绑定的使用使得Bug很难调试。因为数据绑定会使得一个位置的bug很快的传递到别的地方，要准确的找到错误源就不是那么容易的事情。
+* 对于大型的项目，会耗费更多的内存。主要还是由于数据绑定和函数响应式编程等。
+
+上面我们说明了MVVM的优缺点，接下来就是
+####如何利用MVVM来给我们的MVC进行瘦身呢？
+
 ---
 ###MVC中的MVVM
