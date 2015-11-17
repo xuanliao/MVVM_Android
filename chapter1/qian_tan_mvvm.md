@@ -71,6 +71,7 @@ MVVM通常还会使用双向绑定技术，这样可以使得Model与ViewModel�
 ###MVC中的MVVM
 移动端中MVC中Controller承载的职能太多，需要将处理Model数据这部分分离出来。而我们可以利用MVVM中的ViewModel来承担这部分职能，还可以利用数据绑定的特性来快速的将数据反馈给View层来展示。
 ![mvvm和mvc](../res/chapter1/1-3.png)
+
 如图，我们在MVC中插入了VM层，来承载着原来Controller的部分职责，最后变成MVMCV(Model-ViewModel-Controller-View)模式。
 
 现在Controller仅需要关注ViewModel的数据来管理各种各样的视图显示，并当视图有交互时，通知ViewModel来处理相关Model的处理业务。Controller不在需要了解数据库操作，网络请求，数据持久化，数据模型等。
