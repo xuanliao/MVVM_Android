@@ -1,6 +1,10 @@
 # 浅谈MVVM
 
 
+
+---
+
+
 ### MVC
 [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), 及Model-View-Controller，最早诞生于八十年代，在项目架构中明确表明了各个层级的业务逻辑关系，现在已经成为主流的客户端编程框架。简单回顾一下：
 
@@ -39,6 +43,9 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 #####下一个问题，如何组织抽离出来的部分呢？
 也许我们可以从MVVM中找出一些方案。
 
+
+
+---
 
 ###MVVM
 
