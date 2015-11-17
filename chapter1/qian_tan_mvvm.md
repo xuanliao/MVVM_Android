@@ -44,5 +44,4 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 
 ###MVVM
 
-[MVVM](https://en.wikipedia.org/wiki/Model_View_ViewModel)
 
