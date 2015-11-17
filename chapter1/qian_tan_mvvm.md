@@ -47,5 +47,7 @@ Controller的主要职责是担当View与Model之间的桥梁，而同一个项�
 
 ![mvvm](../res/chapter1/1-2.png)
 
+上面图中表明了MVVM的层级关系，可以看出它通过ViewModel层来打破MVC中的闭环，达到View与Model的耦合。
+
 ---
 ###MVC中的MVVM
