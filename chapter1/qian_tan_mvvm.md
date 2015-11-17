@@ -1,10 +1,5 @@
 # 浅谈MVVM
 
-
-
----
-
-
 ### MVC
 [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), 及Model-View-Controller，最早诞生于八十年代，在项目架构中明确表明了各个层级的业务逻辑关系，现在已经成为主流的客户端编程框架。简单回顾一下：
 
