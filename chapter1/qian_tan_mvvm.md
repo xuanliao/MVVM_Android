@@ -74,7 +74,7 @@ MVVM通常还会使用双向绑定技术，这样可以使得Model与ViewModel�
 
 如图，我们在MVC中插入了VM层，来承载着原来Controller的部分职责，最后变成MVMCV(Model-ViewModel-Controller-View)模式。
 
-现在Controller仅需要关注ViewModel来管理各种各样的视图显示，并当视图有交互时，通知ViewModel来处理相关Model的处理业务。Controller不在需要了解数据库操作，网络请求，数据持久化，数据模型等。
+现在Controller仅需要关注ViewModel来管理各种各样的视图显示，并当视图有交互时，通知ViewModel来处理相关Model的业务。Controller不在需要了解数据库操作，网络请求，数据持久化，数据模型等。
 
 ViewModel以属性的方式存在于Controller中，但是它不包含Controller，对Controller一无所知，将Model层完全与Controller层完全的隔离开来。
 
