@@ -79,8 +79,14 @@ MVVM通常还会使用双向绑定技术，这样可以使得Model与ViewModel�
 ViewModel以属性的方式存在于Controller中，但是它不包含Controller，对Controller一无所知，将Model层完全与Controller层完全的隔离开来。
 
 ####总结下现有各个层次的主要职责:
-1. View：呈现给用户的界面布局
+1. View：
+   * 呈现给用户的界面布局
+   * 接受用户的交互事件
 2. Controller：
+   * 链接View与ViewModel（双向绑定）
+   * 处理多个View之间的布局与显示逻辑
+   * 界面导航
+   
 3. ViewModel：
 4. Model：数据对象的结构体，可能会封装些额外的业务逻辑（不提倡这么做）
 
