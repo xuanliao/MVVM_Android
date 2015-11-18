@@ -96,3 +96,4 @@ ViewModel以属性的方式存在于Controller中，但是它不包含Controller
 
 ---
 参考资料：
+[【长篇高能】ReactiveCocoa 和 MVVM 入门](http://www.cocoachina.com/ios/20150526/11930.html)
