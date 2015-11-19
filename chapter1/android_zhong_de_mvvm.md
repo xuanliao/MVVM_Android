@@ -151,7 +151,7 @@ public class User {
 ```
 ```    
     /**
-     * 根据两个状态值来控制登录按钮的显示
+     * 登录时，显示Loading界面
      */
     private void showProgress(final boolean show) {
         ...
