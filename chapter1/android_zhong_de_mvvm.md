@@ -109,5 +109,5 @@ public class User {
     </ScrollView>
 </LinearLayout>
 ```
-* Controller 中的代码比较多，大概在260行左右，其中包含了显示Views，获取用户交互，控制View的显示逻辑和登陆网络请求等。
+* Controller 中的代码比较多，大概在260行左右，其中包含了呈现View，获取用户交互，控制View的显示逻辑和登陆网络请求等。
 
