@@ -261,7 +261,7 @@ private void attemptLogin() {
 ```
 
 #### 别忘了我们的初始化函数
-初始化函数中，我们将获取view中的各个组件，并加入些监听事件来监听View的交互事件。
+初始化函数中，我们将获取view中的各个组件，并加入些监听事件来监听View的交互事件,这边主要是Email与Password的输入事件与登录按钮的触发事件。
 ```
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
