@@ -4,7 +4,7 @@
 作为一个程序员，必须通过```Hello World```来演示一下，如何将MVC中的Controller的部分功能移植到MVVM中的ViewModel中。
 
 ###不一样的Hello World
-![sample](../res/chapter1/1-4.png)
+![sample1_step1](../res/chapter1/1-4.png)![sample1_step2](../res/chapter1/1-5.png)![sample1_step3](../res/chapter1/1-6.png)
 
 
 如图一个登陆界面，用户通过邮箱和密码进行登陆验证，下面的登陆按钮，需要等到email与password全部有输入后才会显示出来。
