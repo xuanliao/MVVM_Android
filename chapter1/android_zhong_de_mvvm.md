@@ -133,3 +133,4 @@ public class User {
     //存储登录成功后的数据
     private User loginUser = null;
 ```
+其中根据两个状态值来控制登录按钮的显示。
