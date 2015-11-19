@@ -136,7 +136,7 @@ public class User {
 ```
 其中根据两个状态值来控制登录按钮的显示。UserLoginTask是一个私有类，用于发送异步登录操作，并返回登录结果。
 
-##### 接下来看看私有函数：
+#### 接下来看看私有函数：
 
  其中分为三个**辅助函数**```isEmailValid, isPasswordValid, md5```,用于邮箱和密码的合法性认证，以及模拟生成token。
  
