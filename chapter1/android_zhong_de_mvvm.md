@@ -22,4 +22,5 @@ public class User {
     省略getter和setter方法
 }```
 
-* View
+* View Android中主要是由layout.xml文件来充当View显示布局。
+
