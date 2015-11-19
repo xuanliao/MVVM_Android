@@ -97,7 +97,15 @@ public class User {
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold"/>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:id="@+id/token_show_text_view"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>```
+
+* Controller 中的代码比较多，大概在260行左右，其中包含了显示View，获取用户交互，控制View的显示逻辑和登陆网络请求等。
+
