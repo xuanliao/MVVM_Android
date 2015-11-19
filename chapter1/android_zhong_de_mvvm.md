@@ -204,4 +204,7 @@ private void attemptLogin() {
         }
     }
 ```
-3.  
+#### 私有类型UserLoginTask
+
+用于模拟异步网络请求登录，并返回token数据，用于界面显示token。
+
