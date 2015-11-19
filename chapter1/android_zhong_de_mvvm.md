@@ -1,7 +1,10 @@
 # Android中的MVVM
 
 这一节我们来看看如何在Android的项目中运用MVVM。
-作为一个程序员，必须通过```Hello World```来演示一下，如何将MVC中的Controller的部分功能移植到MVVM中的ViewModel中。
+先来看看Android中的MVC层级。我们在使用IDE创建一个Activity时，会默认帮我们创建一个xml布局文件。而我们从这两个文件的职责可以看出，Activity相当于Controller，xml布局文件相当于View。
+
+
+明确层级关系后作为一个程序员，必须通过```Hello World```来演示一下，如何将MVC中的Controller的部分功能移植到MVVM中的ViewModel中。
 
 ###不一样的Hello World
 ![sample1_step1](../res/chapter1/1-4.png)![sample1_step2](../res/chapter1/1-5.png)![sample1_step3](../res/chapter1/1-6.png)
