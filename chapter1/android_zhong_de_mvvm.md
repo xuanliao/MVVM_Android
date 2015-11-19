@@ -22,10 +22,7 @@ public class User {
     省略getter和setter方法
 }
 ```
-
-
 * View Android中主要是由layout.xml文件来充当View显示布局。
-
 
 ```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -109,7 +106,7 @@ public class User {
                 android:id="@+id/token_show_text_view"/>
         </LinearLayout>
     </ScrollView>
-</LinearLayout>```
-
+</LinearLayout>
+```
 * Controller 中的代码比较多，大概在260行左右，其中包含了显示View，获取用户交互，控制View的显示逻辑和登陆网络请求等。
 
