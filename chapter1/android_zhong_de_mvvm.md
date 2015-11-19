@@ -23,7 +23,7 @@ public class User {
     省略getter和setter方法
 }
 ```
-* View Android中主要是由layout.xml文件来充当View显示布局。下面是登录显示界面布局
+* View Android中主要是由xml文件来充当View显示布局。下面是登录显示界面布局
 
 ```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
