@@ -114,11 +114,11 @@ public class User {
 先看看私有属性：
 ```
     /**
-     * Keep track of the login task to ensure we can cancel it if requested.
+     * 登录请求Task，用于异步登录
      */
     private UserLoginTask mAuthTask = null;
 
-    // UI references.
+    // 显示UI组件
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
