@@ -20,9 +20,13 @@ public class User {
     private String token;//登陆返回的token
     
     省略getter和setter方法
-}```
+}
+```
+
 
 * View Android中主要是由layout.xml文件来充当View显示布局。
+
+
 ```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
