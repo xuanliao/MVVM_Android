@@ -7,7 +7,7 @@
 ![sample1_step1](../res/chapter1/1-4.png)![sample1_step2](../res/chapter1/1-5.png)![sample1_step3](../res/chapter1/1-6.png)
 
 
-如图一个登陆界面，用户通过邮箱和密码进行登陆验证，下面的登陆按钮，需要等到email与password全部有输入后才会显示出来。
+如图一个登陆界面，用户通过邮箱和密码进行登陆验证，下面的登陆按钮，需要等到email与password全部有输入后才会显示出来, 登陆成功后显示用户的token，还有我们必不可少的```Hello World```。
 我们可以先来看下符合MVC原则的原始部分代码。
 
 ###MVC代码
