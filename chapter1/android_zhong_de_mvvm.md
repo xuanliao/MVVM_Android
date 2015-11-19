@@ -11,7 +11,7 @@
 我们可以先来看下符合MVC原则的原始部分代码。
 
 ###MVC代码
-* Model:User 用来存储用户登陆后的信息数据。
+* Model:User类用来存储用户登陆后的信息数据。
 ```
 public class User {
     private String email;//用户名email
