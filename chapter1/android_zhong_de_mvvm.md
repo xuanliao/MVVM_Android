@@ -269,3 +269,7 @@ private void attemptLogin() {
                 updateSignButton();
             }
 ```
+
+哦，天了，贴了那么多代码，只是为了完成一个简单的登录操作，可以看到现在的Controller就是一个功能繁杂的胖子。那么接下来我们就来拿上MVVM来给这个胖家伙来抽脂吧。
+
+###准备工作
