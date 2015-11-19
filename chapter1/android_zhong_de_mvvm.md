@@ -149,8 +149,6 @@ public class User {
     private void updateSignButton() {
         mEmailSignInButton.setVisibility(mhasEmailText&&mhasPasswordText ? View.VISIBLE : View.GONE);
     }
-```
-```    
     /**
      * 登录时，显示Loading界面
      */
