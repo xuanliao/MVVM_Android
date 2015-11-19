@@ -139,6 +139,7 @@ public class User {
 ##### 接下来看看私有函数：
 
  其中分为三个**辅助函数**```isEmailValid, isPasswordValid, md5```,用于邮箱和密码的合法性认证，以及模拟生成token。
+ 
 两个界面**处理函数**,
 3. 
 
