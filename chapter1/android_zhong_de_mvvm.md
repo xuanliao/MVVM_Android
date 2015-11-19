@@ -135,3 +135,7 @@ public class User {
     private User loginUser = null;
 ```
 其中根据两个状态值来控制登录按钮的显示。
+
+2. 接下来看看私有函数：
+ 
+其中分为三个辅助函数```isEmailValid```, ``````
