@@ -134,7 +134,7 @@ public class User {
     //存储登录成功后的数据
     private User loginUser = null;
 ```
-其中根据两个状态值来控制登录按钮的显示。UserLoginTask是一个私有类，用于发送异步登录操作，并返回登录结果。
+其中根据两个状态值来控制登录按钮的显示。[UserLoginTask](./android_zhong_de_mvvm.md#私有类型userlogintask)是一个私有类，用于发送异步登录操作，并返回登录结果。
 
 #### 接下来看看私有函数：
 
