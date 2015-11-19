@@ -111,3 +111,25 @@ public class User {
 ```
 * Controller 中的代码比较多，大概在260行左右，其中包含了呈现View，获取用户交互，控制View的显示逻辑和登录网络请求等。
 
+先看看私有属性：
+```
+    /**
+     * Keep track of the login task to ensure we can cancel it if requested.
+     */
+    private UserLoginTask mAuthTask = null;
+
+    // UI references.
+    private AutoCompleteTextView mEmailView;
+    private EditText mPasswordView;
+    private View mProgressView;
+    private View mLoginFormView;
+    private Button mEmailSignInButton;
+    private TextView mTokenTextView;
+
+    //两个状态值，用于监听有没有文本输入
+    private  boolean mhasEmailText = false;
+    private  boolean mhasPasswordText = false;
+
+    //存储登录成功后的数据
+    private User loginUser = null;
+```
