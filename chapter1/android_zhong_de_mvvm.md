@@ -22,5 +22,4 @@ public class User {
     省略getter和setter方法
 }```
 
-
 * View
