@@ -207,5 +207,4 @@ private void attemptLogin() {
         }
     }
 ```
-
-3. 
+3.  
