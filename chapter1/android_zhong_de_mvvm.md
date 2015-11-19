@@ -157,7 +157,7 @@ public class User {
         ...
     }
 ```
-一个**功能函数**，
+一个**功能函数**，用于输入验证与发起异步登录请求。
 ```
 private void attemptLogin() {
         if (mAuthTask != null) {
