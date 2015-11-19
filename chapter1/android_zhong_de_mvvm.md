@@ -207,4 +207,55 @@ private void attemptLogin() {
 #### 私有类型UserLoginTask
 
 用于模拟异步网络请求登录，并返回token数据，用于界面显示token。
+```
+    private class UserLoginTask extends AsyncTask<Void, Void, User> {
 
+        private final String mEmail;
+        private final String mPassword;
+
+        UserLoginTask(String email, String password) {
+            mEmail = email;
+            mPassword = password;
+        }
+
+        @Override
+        protected User doInBackground(Void... params) {
+            // TODO: attempt authentication against a network service.
+
+            User user = null;
+            try {
+                // Simulate network access.
+                Thread.sleep(2000);
+                //模拟登录成功，返回user对象
+                user = new User();
+                user.setEmail(mEmail);
+                user.setToken(md5(mEmail));
+            } catch (InterruptedException e) {
+                return null;
+            }
+
+
+            // TODO: register the new account here.
+            return user;
+        }
+
+        @Override
+        protected void onPostExecute(final User user) {
+            mAuthTask = null;
+            showProgress(false);
+
+            if (user!=null) {
+                mTokenTextView.setText(user.getToken()+"\nHello World");
+            } else {
+                mPasswordView.setError(getString(R.string.error_incorrect_password));
+                mPasswordView.requestFocus();
+            }
+        }
+
+        @Override
+        protected void onCancelled() {
+            mAuthTask = null;
+            showProgress(false);
+        }
+    }
+```
