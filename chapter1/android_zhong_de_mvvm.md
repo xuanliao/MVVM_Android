@@ -276,5 +276,5 @@ private void attemptLogin() {
 在抽脂之前，我们需要明确一下需要抽取哪些部位。根据上一章，我们可以将有关Model的业务层抽离到ViewModel层。
 那么我们可以从私有属性入手，将与View没有关联的属性抽出。```mAuthTask```和```loginUser```满足这个条件。接下来我们可以将这两个属性相关的函数和类对象抽离出来，可以满足的函数有辅助函数```isEmailValid, isPasswordValid, md5```，功能函数```attemptLogin```和一个私有内部类```UserLoginTask```。
 
-明确的各个部位，那么接下来的抽脂即将开始。首先我们先创建一个LoginViewModel类，来出来有关Model的业务层，对Controller完成封装User模型。
+明确的各个部位，那么接下来的抽脂即将开始。首先我们先创建一个LoginViewModel类，来处理有关Model的业务层，对Controller完成封装User模型。
 
