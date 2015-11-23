@@ -278,3 +278,4 @@ private void attemptLogin() {
 
 明确的各个部位，那么接下来的抽脂即将开始。首先我们先创建一个LoginViewModel类，来处理有关Model的业务层，对Controller完全封装User模型。
 
+###辅助函数
