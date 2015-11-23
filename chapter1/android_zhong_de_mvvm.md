@@ -286,4 +286,21 @@ private void attemptLogin() {
 * 先来看下Interface的定义：
 
 
-``````
+``` 
+public interface LoginAction {
+        public static int LoginActionErrorEmail = -1001;
+        public static int LoginActionErrorPassword = -1002;
+
+        //登录前准备函数
+        void before();
+
+        //登录准备后函数
+        void after(boolean isSuccess, Error error);
+
+        //登录完成函数
+        void finished(boolean isSuccess, Error error);
+
+        //登录取消函数
+        void onCancelled();
+    }
+    ```
