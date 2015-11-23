@@ -312,4 +312,40 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
 流程图胜于千言万语。
 ![attemptLogin流程图](../res/chapter1/1-7.png)
 
-正如图所示在鉴别与发送登录请求时，我们对外调用了```before```与```after```处理，来让外部处理相关阶段的逻辑。
+正如图所示在鉴别与发送登录请求时，我们对外调用了```before```与```after```处理，来让外部处理相关阶段的逻辑。函数开始时，接收email，password和LoginAction三个参数，其中LoginAction就是对外提供的hook。具体代码如下：
+```
+ public void attemptLogin(String email, String password, LoginAction action) {
+
+        if (mAuthTask != null) {
+            return;
+        }
+
+        action.before();
+
+        boolean cancel = false;
+        Error error = null;//存储错误信息
+
+        // Check for a valid password, if the user entered one.
+        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+            error = new Error(getString(R.string.error_invalid_password), LoginAction.LoginActionErrorPassword);
+            cancel = true;
+        }
+
+        // Check for a valid email address.
+        if (TextUtils.isEmpty(email)) {
+            error = new Error(getString(R.string.error_field_required), LoginAction.LoginActionErrorEmail);
+            cancel = true;
+        } else if (!isEmailValid(email)) {
+            error = new Error(getString(R.string.error_invalid_email), LoginAction.LoginActionErrorEmail);
+            cancel = true;
+        }
+
+        action.after(!cancel, error);
+
+        if (!cancel) {
+            //开始异步登录
+            mAuthTask = new UserLoginTask(email, password, action);
+            mAuthTask.execute((Void) null);
+        }
+    }
+```
