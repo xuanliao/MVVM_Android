@@ -353,4 +353,61 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
 ### UserLoginTask私有类
 在```attemptLogin```最后，我们发送了一个UserLoginTask的异步请求来处理网络登录问题。在原有的代码中，UserLoginTask也是掺杂着View与业务逻辑代码，同样的我们可以使用Interface来对它进行改造移植。
 
-其中UserLoginTask本身就是一个业务处理类，所以没有必要对外公开，所以是一个私有类以及```mAuthTask```私有变量。
+其中UserLoginTask本身就是一个业务处理类，所以没有必要对外公开，所以是一个私有类以及```mAuthTask```私有变量。具体代码如下：
+```
+ private class UserLoginTask extends AsyncTask<Void, Void, User> {
+
+        private final String mEmail;
+        private final String mPassword;
+        private final LoginAction mAction;
+        UserLoginTask(String email, String password, LoginAction action) {
+            mEmail = email;
+            mPassword = password;
+            mAction = action;
+        }
+
+        @Override
+        protected User doInBackground(Void... params) {
+            User user = null;
+            try {
+                // Simulate network access.
+                Thread.sleep(2000);
+                //模拟登录成功，返回user对象
+                user = new User();
+                user.setEmail(mEmail);
+                user.setToken(md5(mEmail));
+            } catch (InterruptedException e) {
+                return null;
+            }
+            return user;
+        }
+
+        @Override
+        protected void onPostExecute(final User user) {
+            mAuthTask = null;
+
+            Boolean hasError = false;
+            Error error = null;
+
+
+            if (user!=null) {
+                LoginViewModel.this.loginUser = user;
+                LoginViewModel.this.setToken(user.getToken());
+            } else {
+                error = new Error(getString(R.string.error_incorrect_password), LoginAction.LoginActionErrorPassword);
+                hasError = true;
+
+            }
+
+            mAction.finished(!hasError, error);
+        }
+
+        @Override
+        protected void onCancelled() {
+            mAuthTask = null;
+            mAction.onCancelled();
+        }
+    }
+
+
+```
