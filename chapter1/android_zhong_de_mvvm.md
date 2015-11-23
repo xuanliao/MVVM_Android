@@ -410,4 +410,9 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
     }
 ```
 
+###添加显示属性
+ViewModel中用于对外显示的属性主要是用户登录成功后格式化后的token。
+
+
 到这里我们将Controller中的业务逻辑部分完全移植到ViewModel中，接下来我们只要在Controller中将View与ViewModel进行连接就可以了。
+主要是在```onCreate```中new出LoginViewModel对象。
