@@ -279,3 +279,7 @@ private void attemptLogin() {
 明确的各个部位，那么接下来的抽脂即将开始。首先我们先创建一个LoginViewModel类，来处理有关Model的业务层，对Controller完全封装User模型。
 
 ###辅助函数
+辅助函数相对于各层次的耦合度比较低，完全可以复制到ViewModel中（实际项目中，最好放在工具类中，方便全项目使用）。
+
+###功能函数
+```attemptLogin``` 中掺杂着业务逻辑与View的界面操作代码，那就意味着这个函数的界面也业务的耦合度很高。我们的目的是将View操作与业务逻辑分离。幸好Java中我们可以将业务逻辑代码移植到ViewModel中，使用interface来将View操作的代码暴露给Controller使用。
