@@ -312,7 +312,7 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
 流程图胜于千言万语。
 ![attemptLogin流程图](../res/chapter1/1-7.png)
 
-正如图所示在鉴别与发送登录请求时，我们对外调用了```before```与```after```处理，来让外部处理相关阶段的逻辑。函数开始时，接收email，password和LoginAction三个参数，其中LoginAction就是对外提供的hook。具体代码如下：
+正如图所示在鉴别与发送登录请求时，我们对外调用了```before```与```after```处理，来让外部处理相关阶段的逻辑。函数开始时，接收email，password和LoginAction三个参数，其中LoginAction就是对外提供的hook,同时将函数更改成public。具体代码如下：
 ```
  public void attemptLogin(String email, String password, LoginAction action) {
 
