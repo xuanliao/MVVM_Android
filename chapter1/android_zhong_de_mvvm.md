@@ -307,3 +307,7 @@ public interface LoginAction {
 LoginAction中的定义了两个错误类型值与四个用于外部处理的hooks（这里主要用于通知Controller做界面变换）。
 
 * ```attemptLogin```流程
+
+
+流程图胜于千言万语。
+![attemptLogin流程图](../res/chapter1/1-7.png)
