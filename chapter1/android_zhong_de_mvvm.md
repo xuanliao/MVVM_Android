@@ -353,7 +353,7 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
 ### UserLoginTask私有类
 在```attemptLogin```最后，我们发送了一个UserLoginTask的异步请求来处理网络登录问题。在原有的代码中，UserLoginTask也是掺杂着View与业务逻辑代码，同样的我们可以使用Interface来对它进行改造移植。
 
-其中UserLoginTask本身就是一个业务处理类，所以没有必要对外公开，所以是一个私有类以及```mAuthTask```私有变量。具体代码如下：
+其中UserLoginTask本身就是一个业务处理类，所以没有必要对外公开，是一个私有类以及```mAuthTask```私有变量。具体代码如下：
 ```
  private class UserLoginTask extends AsyncTask<Void, Void, User> {
 
