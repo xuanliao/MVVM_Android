@@ -351,4 +351,4 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
 ```
 
 ### UserLoginTask私有类
-在```attemptLogin```最后，我们发送了一个UserLoginTask的异步请求来处理网络登录问题。
+在```attemptLogin```最后，我们发送了一个UserLoginTask的异步请求来处理网络登录问题。在原有的代码中，UserLoginTask也是掺杂着View与业务逻辑代码，同样的我们可以使用Interface来对它进行改造移植。
