@@ -408,6 +408,4 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
             mAction.onCancelled();
         }
     }
-
-
 ```
