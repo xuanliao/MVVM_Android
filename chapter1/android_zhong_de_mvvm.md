@@ -477,3 +477,5 @@ ViewModel中用于对外显示的属性主要是用户登录成功后格式化�
                     }
                 });
 ```
+到此，我们实现了MVVM在MVC中的应用。可以看出现有的ViewModel、Controller相对于原有的Controller，功能更加的明确，最大的好处是ViewModel内没有View逻辑，将更加的可维护和可测试。
+
