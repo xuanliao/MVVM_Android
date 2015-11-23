@@ -430,4 +430,50 @@ ViewModel中用于对外显示的属性主要是用户登录成功后格式化�
 ```
 
 到这里我们将Controller中的业务逻辑部分完全移植到ViewModel中，接下来我们只要在Controller中将View与ViewModel进行连接就可以了。
-主要是在```onCreate```中new出LoginViewModel对象。
+主要是在```onCreate```中new出LoginViewModel对象。并实现调用ViewModel中```attemptLogin```后的LoginAction。
+```
+ viewModel.attemptLogin(mEmailView.getText().toString(), mPasswordView.getText().toString(),
+                new LoginViewModel.LoginAction() {
+                    @Override
+                    public void before() {
+                        // Reset errors.
+                        mEmailView.setError(null);
+                        mPasswordView.setError(null);
+                    }
+
+                    @Override
+                    public void after(boolean isSuccess, com.xuanpeng.mvvmsamplechapter1.model.Error error) {
+                        if (isSuccess) {
+                            // Show a progress spinner, and kick off a background task to
+                            // perform the user login attempt.
+                            showProgress(true);
+                        } else  {
+                            // There was an error; don't attempt login and focus the first
+                            // form field with an error.
+                            if (error.getCode() == LoginActionErrorEmail) {
+                                mEmailView.setError(error.getMessage());
+                                mEmailView.requestFocus();
+                            } else  {
+                                mPasswordView.setError(error.getMessage());
+                                mPasswordView.requestFocus();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void finished(boolean isSuccess, Error error) {
+                        showProgress(false);
+                        if (isSuccess) {
+                            mTokenTextView.setText(LoginActivity.this.viewModel.getToken());
+                        } else {
+                            mPasswordView.setError(error.getMessage());
+                            mPasswordView.requestFocus();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled() {
+                        showProgress(false);
+                    }
+                });
+```
