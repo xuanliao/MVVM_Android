@@ -409,3 +409,5 @@ LoginAction中的定义了两个错误类型值与四个用于外部处理的hoo
         }
     }
 ```
+
+到这里我们将Controller中的业务逻辑部分完全移植到ViewModel中，接下来我们只要在Controller中将View与ViewModel进行连接就可以了。
