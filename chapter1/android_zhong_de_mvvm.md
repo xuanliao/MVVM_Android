@@ -283,3 +283,7 @@ private void attemptLogin() {
 
 ###功能函数
 ```attemptLogin``` 中掺杂着业务逻辑与View的界面操作代码，那就意味着这个函数的界面也业务的耦合度很高。我们的目的是将View操作与业务逻辑分离。幸好Java中我们可以将业务逻辑代码移植到ViewModel中，使用interface来将View操作的代码暴露给Controller使用，也可以理解对外部提供hooks用于View的处理。
+* 先来看下Interface的定义：
+
+
+``````
