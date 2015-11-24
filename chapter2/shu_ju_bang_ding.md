@@ -18,3 +18,5 @@ Android上数据绑定并非Google首创，在此之前[RoboBinding](http://robo
 
 **准备：Android Studio 1.3.0-beta1或者更高版本。**
 ![更新Android Studio](../res/chapter2/2-1.png)
+
+如图可以将Android Studio更新到最新的beta版本。
