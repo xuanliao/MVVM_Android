@@ -50,3 +50,4 @@ apply plugin: 'com.android.databinding'
 这样一个项目的Data Binding环境搭建完成。接下来就是将之前的登录Demo进行Data Binding的改造。
 
 ##布局文件
+Data Binding的布局文件有少许不同。根标签以```layout```开始，接下来包含```data```元素，下面才包含```view```的布局元素
