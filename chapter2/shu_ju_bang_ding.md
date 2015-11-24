@@ -96,4 +96,4 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
 ##Data对象（ViewModel）
 这边的ViewModel可以是POJO或者JavaBeans，但是这类数据，没法动态将更改的数据体现到View中，也就是只能显示初始化的数据。
 
-如果需要显示动态数据的话
+如果需要显示动态数据的话，可以有三种方式：```Observable对象```、```ObservableFields```以及```observable collections```。
