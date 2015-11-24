@@ -30,7 +30,7 @@ Android上数据绑定并非Google首创，在此之前[RoboBinding](http://robo
         classpath 'com.android.databinding:dataBinder:1.+'
     }
 ```
-由于上面的依赖项目目前在jcenter服务器上，需要确保repositories中包含jcenter：
+由于上面的依赖项目目前在jcenter服务器上，还需要确保repositories中包含jcenter：
 ```
 allprojects {
     repositories {
