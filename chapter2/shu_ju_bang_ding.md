@@ -85,3 +85,4 @@ Data Binding的布局文件有少许不同。根标签以```layout```开始，�
         <variable name="loginViewModel" type="com.xuanpeng.mvvmsamplechapter1.viewmodel.LoginViewModel"/>
     </data>
 ```
+Data Binding可以快速的将ViewModel内的更新传递到View上显示。我们这里用它来更改token的显示。
