@@ -9,3 +9,7 @@ Android上数据绑定并非Google首创，在此之前[RoboBinding](http://robo
 
 ###注意事项
 * 该库还处在测试阶段，随时都有大面积更改的风险，并且可能包含bugs。
+* Android Studio的开发界面支持不是很好。
+
+
+##构建环境
