@@ -93,5 +93,7 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
 ```
 注意完成布局后，默认情况下会声称一个Binding类，命名默认是基于layout的文件名称，用大写开头，去下划线驼峰式的命名，然后添加"Binding"后缀。这个类将被放置在一个模块封装包里的```databinding```封装包下。例如该layout文件```activity_login.xml```,生成```ActivityLoginBinding```类，并放在```com.xuanpeng.mvvmsamplechapter1.databinding```包内。
 
-##数据模型（ViewModel）
+##Data对象（ViewModel）
 这边的ViewModel可以是POJO或者JavaBeans，但是这类数据，没法动态将数据更改体现到View中，也就是只能显示初始化的数据。
+
+如果需要显示动态数据的话
