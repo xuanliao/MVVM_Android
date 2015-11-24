@@ -99,4 +99,24 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
 如果需要显示动态数据的话，可以有三种方式：```Observable对象```、```ObservableFields```以及```observable collections```。
 接下来我们使用Observable对象来更改我们的LoginViewModel。
 
-实现Observable对象，可以让LoginViewModel继承与BaseObservable类。
+实现Observable对象，可以让LoginViewModel继承与BaseObservable类。可以看下更改后的token的get与setter方法
+```
+//登录成功后界面显示的toke
+    private String token;
+
+    @Bindable
+    public String getToken() {
+        return token;
+    }
+
+    protected void setToken(String token) {
+        if (token.isEmpty()) {
+            this.token = token;
+        } else {
+            //token 不为空的话，添加Hello World文本
+            this.token = token+"\nHello World";
+        }
+
+        notifyPropertyChanged(BR.token);
+    }
+```
