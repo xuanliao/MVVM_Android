@@ -51,3 +51,30 @@ apply plugin: 'com.android.databinding'
 
 ##布局文件
 Data Binding的布局文件有少许不同。根标签以```layout```开始，接下来包含```data```元素，下面才包含```view```的布局元素。基本格式如下：
+```
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="loginViewModel" type="com.xuanpeng.mvvmsamplechapter1.viewmodel.LoginViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ...
+        tools:context="com.xuanpeng.mvvmsamplechapter1.LoginActivity">
+
+        ....
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:text="@{loginViewModel.token}"
+                    android:id="@+id/token_show_text_view"/>
+    </LinearLayout>
+
+</layout>
+
+```
