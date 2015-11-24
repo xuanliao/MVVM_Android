@@ -5,4 +5,4 @@
  
  Data Binding Library是support库，基本可以在所有的Android平台上使用，最低支持到Android2.1(API 7+)。
  
-Android上的数据绑定并非Google首创，再次之前[RoboBinding](http://robobinding.github.io/RoboBinding/getting_started.zh.html#_robobinding是什么)
+Android上的数据绑定并非Google首创，在此之前[RoboBinding](http://robobinding.github.io/RoboBinding/getting_started.zh.html#_robobinding是什么)就已经实现了。
