@@ -80,3 +80,8 @@ Data Binding的布局文件有少许不同。根标签以```layout```开始，�
 ```
 
 在data中描述了一个名为loginViewModel的变量，并且指明了变量的类型，就是我们的ViewModel，这样就可以在layout中使用该变量。
+```
+    <data>
+        <variable name="loginViewModel" type="com.xuanpeng.mvvmsamplechapter1.viewmodel.LoginViewModel"/>
+    </data>
+```
