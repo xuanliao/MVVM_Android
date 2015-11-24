@@ -39,3 +39,5 @@ allprojects {
 }
 ```
 
+* 在每一个使用Data Binding的module中添加插件:
+
