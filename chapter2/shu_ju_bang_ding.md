@@ -121,3 +121,5 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
     }
 ```
 其中注解```@Bindable```标记过的getter方法，会在生成的```BR```文件内生成一个entry。这边的```BR.java```文件和```R.java```文件类似。而在setter方法中，token发生变化时，需要调用```notifyPropertyChanged```函数来触发View来更新显示。
+
+zhe
