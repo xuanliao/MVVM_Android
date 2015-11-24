@@ -44,3 +44,4 @@ allprojects {
 apply plugin: 'com.android.application'
 apply plugin: 'com.android.databinding'
 ```
+注意，如果构建项目如下错误```com.android.build.transform.api.TransformException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException:```
