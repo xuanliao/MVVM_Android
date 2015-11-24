@@ -1,5 +1,7 @@
 # 数据绑定
 
+这篇文章准备简单介绍一下Data Binding Library以及如何在之前的Demo中使用。
+
 ## 简介
  今年的Google IO大会，给Android的开发人员带来了很多的[福利](http://www.androidchina.net/2734.html)。其中的[数据绑定（Data Binding library）](https://developer.android.com/tools/data-binding/guide.html)和MVVM息息相关，为Android UI开发中带入了数据绑定的特性，解决了UI编程中重复粘贴复制的痛点。
  
