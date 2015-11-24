@@ -48,5 +48,3 @@ apply plugin: 'com.android.databinding'
 可在defaultConfig中添加```multiDexEnabled true```。
 
 这样一个项目的Data Binding环境搭建完成。接下来就是将之前的登录Demo进行Data Binding的改造。
-
-
