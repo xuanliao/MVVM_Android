@@ -120,3 +120,4 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
         notifyPropertyChanged(BR.token);
     }
 ```
+其中注解```@Bindable```
