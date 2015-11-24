@@ -8,3 +8,4 @@
 Android上数据绑定并非Google首创，在此之前[RoboBinding](http://robobinding.github.io/RoboBinding/getting_started.zh.html#_robobinding是什么)就已经实现了。（个人认为在现有项目中最好还是使用RoboBinding）。
 
 ###注意事项
+* 该库还处在测试阶段，随时都有大面积更改的风险，并且可能包含bugs。
