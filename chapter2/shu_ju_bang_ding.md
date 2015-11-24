@@ -22,4 +22,4 @@ Android上数据绑定并非Google首创，在此之前[RoboBinding](http://robo
 如图可以将Android Studio更新到最新的beta版本。
 
 * 通过Android SDK Manager 下载最新的Android Support Repository,其中包含Data Binding Library。
-* zai
+* 在项目的build.gradle中添加依赖项：
