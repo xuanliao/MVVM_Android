@@ -124,7 +124,7 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
 这样一个带Data Binding的简单ViewModel完成。接下来就是需要在Controller中将View与ViewModel关联。
 
 ## View与ViewModel关联
-View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类与ViewModel（```LoginViewModel```）绑定。具体的连接代码在Activity类的```onCreate```函数。
+View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类与ViewModel（```LoginViewModel```）绑定。具体的连接代码在Activity类的```onCreate```函数中。
 ```
     @Override
     protected void onCreate(Bundle savedInstanceState) {
