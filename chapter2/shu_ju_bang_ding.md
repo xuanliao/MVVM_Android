@@ -64,7 +64,6 @@ Data Binding的布局文件有少许不同。根标签以```layout```开始，�
         android:layout_height="match_parent"
         ...
         tools:context="com.xuanpeng.mvvmsamplechapter1.LoginActivity">
-
         ....
                 <TextView
                     android:layout_width="match_parent"
