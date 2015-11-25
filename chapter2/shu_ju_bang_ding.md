@@ -137,3 +137,4 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
         ....
     }
 ```
+具体用```DatabindingUtil.setContentView()```来替换掉 ```setContentView()```，然后创建一个ViewModel对象，通过```binding.setLoginViewModel(viewModel)```与ViewModel进行绑定。
