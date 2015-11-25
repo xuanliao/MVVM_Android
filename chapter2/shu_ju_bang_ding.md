@@ -135,5 +135,6 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
         //初始化ViewModel
         viewModel = new LoginViewModel();
         binding.setLoginViewModel(viewModel);
+        ....
     }
 ```
