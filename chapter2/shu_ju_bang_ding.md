@@ -140,3 +140,7 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 具体用```DatabindingUtil.setContentView()```来替换掉 ```setContentView()```，然后创建一个ViewModel对象，通过```binding.setLoginViewModel(viewModel)```与ViewModel进行绑定。
 
 布局文件中带id的组件，为在```ActivityLoginBinding```生成对应的final变量，这样我们就不需要调用```findViewById```来获取组件对象，可以直接使用```ActivityLoginBinding```类内的final变量。如原来的```mEmailView = (AutoCompleteTextView)findViewById(R.id.email);```函数可以直接替换成```mEmailView = binding.email;```，这种方式反而比findViewById效率更高些。
+
+到此Data Binding在Demo中的移植完成，我们可以直接build代码了。
+
+##
