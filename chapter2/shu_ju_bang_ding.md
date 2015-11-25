@@ -126,3 +126,14 @@ Data Binding可以快速的将ViewModel内的更新传递到View上显示。我�
 
 ## View与ViewModel关联
 View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类与ViewModel（```LoginViewModel```）绑定。具体的连接代码在Activity类的```onCreate```函数。
+```
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        ActivityLoginBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_login);
+        //初始化ViewModel
+        viewModel = new LoginViewModel();
+        binding.setLoginViewModel(viewModel);
+    }
+```
