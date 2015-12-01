@@ -153,4 +153,5 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 ---
 参考资料：
 [官方文档](https://developer.android.com/tools/data-binding/guide.html)
+
 [精通 Android Data Binding](https://github.com/LyndonChin/MasteringAndroidDataBinding)
