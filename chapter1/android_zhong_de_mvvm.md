@@ -482,4 +482,4 @@ ViewModel中用于对外显示的属性主要是用户登录成功后格式化�
 到这里，如果说MVVM在MVC中的应用结束的话，未免有点得不偿失，毕竟我们可以通过其它的方式来优化MVC（比如[MPV](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)等）。但是别忘记我们在讲MVVM时说过数据绑定的特性，那么接下来，我们进入下一章，**[数据绑定在MVVM中的应用](../chapter2/shu_ju_bang_ding.md)**。
 
 ---
-[本章Demo源码](https://github.com/xuanliao/MVVM_Samples/tree/master/MVVMSampleChapter1)
+###[本章Demo源码](https://github.com/xuanliao/MVVM_Samples/tree/master/MVVMSampleChapter1)
