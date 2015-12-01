@@ -156,3 +156,6 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 [官方文档](https://developer.android.com/tools/data-binding/guide.html)
 
 [精通 Android Data Binding](https://github.com/LyndonChin/MasteringAndroidDataBinding)
+
+
+###[本章Demo源码](https://github.com/xuanliao/MVVM_Samples/tree/master/MVVMSampleChapter1)
