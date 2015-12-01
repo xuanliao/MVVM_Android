@@ -143,4 +143,5 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 
 到此Data Binding在Demo中的移植完成，我们可以直接build代码了。
 
-##
+##Data Binding现有缺点
+比较遗憾的是现在的DataBinding支持库还不支持双向绑定，单向的绑定的数据变化还需要一些代码支持(```notifyPropertyChanged```)。
