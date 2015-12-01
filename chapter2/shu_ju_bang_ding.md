@@ -148,4 +148,5 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 该库还处于beta版本，所以大家还是可以耍耍，别在正式项目中使用。
 
 这一节内容比较简短，重在让大家看看数据绑定在MVVM中的应用。
+
 我们的MVVM代码移植就此结束了吗？**No**，接下来准备向多任务异步处理代码开刀了，我们的手术刀就是[**函数响应式编程**](../chapter3/han_shu_xiang_ying_shi_bian_cheng.md)。
