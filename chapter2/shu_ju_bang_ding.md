@@ -147,3 +147,4 @@ View（```activity_login.xml```）通过生成的```ActivityLoginBinding```类�
 比较遗憾的是现在的DataBinding支持库还不支持双向绑定，单向的绑定的数据变化还需要一些代码支持(```notifyPropertyChanged```)。
 该库还处于beta版本，所以大家还是可以耍耍，别在正式项目中使用。
 
+这一节内容比较简短，重在让大家看看数据绑定在MVVM中的应用。
