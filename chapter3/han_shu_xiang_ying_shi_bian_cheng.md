@@ -9,3 +9,4 @@
 ##函数式编程
 [函数式编程](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)一个诞生于50年前的[编程范式](https://en.wikipedia.org/wiki/Programming_paradigm)（编程思想），却在这几年才获得越来越多的关注。目前Python、Ruby、Javascript等对函数式编程的支持都相当的强大，连面向对象的Java、面向过程的PHP，都加入了支持。
 种种迹象表明，未来的它将占有一席之地，那我们还能迟疑嘛？
+
